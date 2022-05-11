@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import "./Calculator.css";
 
+
+// Formulas for the calculator
+
 const Calculator = () => {
 const [inputValue, setInputValue] = useState ("");
 
@@ -8,11 +11,24 @@ const display = (value) => {
     setInputValue(inputValue + value);
 };
 
+
+
+// Generate answer
+
 const calculate = () =>{
     let answer = eval(inputValue);
     setInputValue(answer);
 
 };
+
+// Clears the calculator
+
+const clear = () => {
+    setInputValue()
+}
+
+
+// CALCULATOR
 
     return (
         <div className="container">
