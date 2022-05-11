@@ -19,34 +19,63 @@ const Calculator = () => {
                     <button>C</button>
                     </td>
                  </tr>
- 
-                 <tr>
+
+             <tr>
+            <td>
                  <td><button>1</button></td>
+
                  <td><button>2</button></td>
+
                  <td><button>3</button></td>
+
                  <td><button>/</button></td>
-                </tr>
+               
+            </td>
+            </tr>
+            
+            <tr>
+            <td>
 
-                <tr>
                  <td><button>4</button></td>
+
                  <td><button>5</button></td>
+                 
                  <td><button>6</button></td>
+
                  <td><button>-</button></td>
-                </tr>
+                 
+             </td>
+             </tr>
 
+            
                 <tr>
-                 <td><button>7</button></td>
-                 <td><button>8</button></td>
-                 <td><button>9</button></td>
-                 <td><button>+</button></td>
-                </tr>
+                <td>
 
+                 <td><button>7</button></td>
+
+                 <td><button>8</button></td>
+
+                 <td><button>9</button></td>
+
+                 <td><button>+</button></td>
+
+                 </td>
+                </tr>
+            
+
+            <td>
                  <tr>
+
                  <td><button>.</button></td>
+
                  <td><button>0</button></td>
+
                  <td><button>=</button></td>
+
                  <td><button>*</button></td>
+
                  </tr>
+            </td>
 
             </table>
             </div>
