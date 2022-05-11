@@ -24,7 +24,7 @@ const calculate = () =>{
 // Clears the calculator
 
 const clear = () => {
-    setInputValue()
+    setInputValue("");
 }
 
 
@@ -40,11 +40,16 @@ const clear = () => {
                     <td colSpan="3">
                         <input className="w-100" type="text" value={inputValue} />
                     </td>       
-                    <td>
+                    
 
 {/* Buttons for Calculator */}
 
-                    <button>C</button>
+                    <td>
+                    <button onClick={()=>{clear();
+                    }}
+                    >
+                        C
+                        </button>
                     </td>
                  </tr>
 <tr className="space">
