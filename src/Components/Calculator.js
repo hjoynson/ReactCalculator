@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import "./Calculator.css";
 
 const Calculator = () => {
-
 const [inputValue, setInputValue] = useState ("");
 
 const display = (value) => {
     setInputValue(inputValue + value);
+};
+
+const calculate = () =>{
+    let answer = eval(inputValue);
+    setInputValue(answer);
+
 };
 
     return (
@@ -134,13 +139,16 @@ const display = (value) => {
                      display("0");
                  }}
                  >
-                     0</button></td>
+                     0
+                     </button>
+                     </td>
 
-                 <td><button onClick={() => {
-                     display("=");
-                 }}
-                 >
-                     =</button></td>
+                 <td>
+                 <button onClick={() => {calculate();
+                }}
+                >
+                    =
+                    </button></td>
 
                      <td><button onClick={() => {
                      display("*");
