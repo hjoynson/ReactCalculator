@@ -2,6 +2,13 @@ import React from 'react';
 import "./Calculator.css";
 
 const Calculator = () => {
+
+const [inputValue, setInputValue] = useState ("");
+
+const display = (value) => {
+
+}
+
     return (
         <div className="container">
             <div className="row justify-content-center">
@@ -10,7 +17,7 @@ const Calculator = () => {
                 <table className="table">
                 <tr>
                     <td colSpan="3">
-                        <input className="w-100" type="text" />
+                        <input className="w-100" type="text" value={inputValue} />
                     </td>       
                     <td>
 
@@ -19,14 +26,29 @@ const Calculator = () => {
                     <button>C</button>
                     </td>
                  </tr>
-
+<tr className="space">
+    <td className="p-2"></td>
+</tr>
              <tr>
-            <td>
-                 <td><button>1</button></td>
+                <td>
+                 <td><button onClick={() => {
+                     display("1");
+                 }}
+                 >
+                     1
+                     </button></td>
 
-                 <td><button>2</button></td>
+                 <td><button onClick={() => {
+                     display("2");
+                 }}
+                 >
+                     2</button></td>
 
-                 <td><button>3</button></td>
+                 <td><button onClick={() => {
+                     display("3");
+                 }}
+                 >
+                     3</button></td>
 
                  <td><button>/</button></td>
                

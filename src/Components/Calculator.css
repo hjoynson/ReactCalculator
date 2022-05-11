@@ -11,7 +11,8 @@
 
 button {
     width:100% !important;
-    background-color:#d57eeb;
-    color: #fccb90;
+    background-color:#d57eeb !important;
+    color: #fccb90 !important;
     font-weight: bold !important;
 }
+
