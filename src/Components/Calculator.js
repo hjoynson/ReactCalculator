@@ -6,7 +6,7 @@ const Calculator = () => {
 const [inputValue, setInputValue] = useState ("");
 
 const display = (value) => {
-
+    setInputValue
 }
 
     return (
@@ -50,7 +50,11 @@ const display = (value) => {
                  >
                      3</button></td>
 
-                 <td><button>/</button></td>
+                     <td><button onClick={() => {
+                     display("/");
+                 }}
+                 >
+                     /</button></td>
                
             </td>
             </tr>
@@ -58,13 +62,37 @@ const display = (value) => {
             <tr>
             <td>
 
-                 <td><button>4</button></td>
+            <td>
+                 <td><button onClick={() => {
+                     display("4");
+                 }}
+                 >
+                     1
+                     </button></td>
 
-                 <td><button>5</button></td>
+                     <td>
+                 <td><button onClick={() => {
+                     display("5");
+                 }}
+                 >
+                     1
+                     </button></td>
                  
-                 <td><button>6</button></td>
+                     <td>
+                 <td><button onClick={() => {
+                     display("6");
+                 }}
+                 >
+                     1
+                     </button></td>
 
-                 <td><button>-</button></td>
+                     <td>
+                 <td><button onClick={() => {
+                     display("-");
+                 }}
+                 >
+                     1
+                     </button></td>
                  
              </td>
              </tr>
@@ -73,13 +101,33 @@ const display = (value) => {
                 <tr>
                 <td>
 
-                 <td><button>7</button></td>
+                <td><button onClick={() => {
+                     display("7");
+                 }}
+                 >
+                     1
+                     </button></td>
 
-                 <td><button>8</button></td>
+                     <td><button onClick={() => {
+                     display("8");
+                 }}
+                 >
+                     1
+                     </button></td>
 
-                 <td><button>9</button></td>
+                     <td><button onClick={() => {
+                     display("9");
+                 }}
+                 >
+                     1
+                     </button></td>
 
-                 <td><button>+</button></td>
+                     <td><button onClick={() => {
+                     display("+");
+                 }}
+                 >
+                     1
+                     </button></td>
 
                  </td>
                 </tr>
@@ -88,18 +136,39 @@ const display = (value) => {
             <td>
                  <tr>
 
-                 <td><button>.</button></td>
+                 <td><button onClick={() => {
+                     display(".");
+                 }}
+                 >
+                     1
+                     </button></td>
 
-                 <td><button>0</button></td>
+                     <td><button onClick={() => {
+                     display("0");
+                 }}
+                 >
+                     1
+                     </button></td>
 
-                 <td><button>=</button></td>
+                     <td><button onClick={() => {
+                     display("=");
+                 }}
+                 >
+                     1
+                     </button></td>
 
-                 <td><button>*</button></td>
+                     <td><button onClick={() => {
+                     display("*");
+                 }}
+                 >
+                     1
+                     </button></td>
 
                  </tr>
             </td>
 
             </table>
+            
             </div>
         </div>
      </div>
