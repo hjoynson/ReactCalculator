@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Calculator.css";
 
 const Calculator = () => {
@@ -6,8 +6,8 @@ const Calculator = () => {
 const [inputValue, setInputValue] = useState ("");
 
 const display = (value) => {
-    setInputValue
-}
+    setInputValue(inputValue + value);
+};
 
     return (
         <div className="container">
@@ -62,29 +62,29 @@ const display = (value) => {
             <tr>
                 <td>
                  <td><button onClick={() => {
-                     display("1");
+                     display("4");
                  }}
                  >
-                     1
+                     4
                      </button></td>
 
                  <td><button onClick={() => {
-                     display("2");
+                     display("5");
                  }}
                  >
-                     2</button></td>
+                     5</button></td>
 
                  <td><button onClick={() => {
-                     display("3");
+                     display("6");
                  }}
                  >
-                     3</button></td>
+                     6</button></td>
 
                      <td><button onClick={() => {
-                     display("/");
+                     display("-");
                  }}
                  >
-                     /</button></td>
+                     -</button></td>
                
             </td>
             </tr>
@@ -93,29 +93,29 @@ const display = (value) => {
             <tr>
                 <td>
                  <td><button onClick={() => {
-                     display("1");
+                     display("7");
                  }}
                  >
-                     1
+                     7
                      </button></td>
 
                  <td><button onClick={() => {
-                     display("2");
+                     display("8");
                  }}
                  >
-                     2</button></td>
+                     8</button></td>
 
                  <td><button onClick={() => {
-                     display("3");
+                     display("9");
                  }}
                  >
-                     3</button></td>
+                     9</button></td>
 
                      <td><button onClick={() => {
-                     display("/");
+                     display("+");
                  }}
                  >
-                     /</button></td>
+                     +</button></td>
                
             </td>
             </tr>
@@ -124,29 +124,29 @@ const display = (value) => {
             <tr>
                 <td>
                  <td><button onClick={() => {
-                     display("1");
+                     display(".");
                  }}
                  >
-                     1
+                     .
                      </button></td>
 
                  <td><button onClick={() => {
-                     display("2");
+                     display("0");
                  }}
                  >
-                     2</button></td>
+                     0</button></td>
 
                  <td><button onClick={() => {
-                     display("3");
+                     display("=");
                  }}
                  >
-                     3</button></td>
+                     =</button></td>
 
                      <td><button onClick={() => {
-                     display("/");
+                     display("*");
                  }}
                  >
-                     /</button></td>
+                     *</button></td>
                
             </td>
             </tr>
