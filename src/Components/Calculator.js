@@ -60,118 +60,105 @@ const display = (value) => {
             </tr>
             
             <tr>
-            <td>
-
-            <td>
-                 <td><button onClick={() => {
-                     display("4");
-                 }}
-                 >
-                     1
-                     </button></td>
-
-                     <td>
-                 <td><button onClick={() => {
-                     display("5");
-                 }}
-                 >
-                     1
-                     </button></td>
-                 
-                     <td>
-                 <td><button onClick={() => {
-                     display("6");
-                 }}
-                 >
-                     1
-                     </button></td>
-
-                     <td>
-                 <td><button onClick={() => {
-                     display("-");
-                 }}
-                 >
-                     1
-                     </button></td>
-                 
-             </td>
-             </tr>
-
-            
-                <tr>
                 <td>
-
-                <td><button onClick={() => {
-                     display("7");
+                 <td><button onClick={() => {
+                     display("1");
                  }}
                  >
                      1
                      </button></td>
-
-                     <td><button onClick={() => {
-                     display("8");
-                 }}
-                 >
-                     1
-                     </button></td>
-
-                     <td><button onClick={() => {
-                     display("9");
-                 }}
-                 >
-                     1
-                     </button></td>
-
-                     <td><button onClick={() => {
-                     display("+");
-                 }}
-                 >
-                     1
-                     </button></td>
-
-                 </td>
-                </tr>
-            
-
-            <td>
-                 <tr>
 
                  <td><button onClick={() => {
-                     display(".");
+                     display("2");
                  }}
                  >
-                     1
-                     </button></td>
+                     2</button></td>
+
+                 <td><button onClick={() => {
+                     display("3");
+                 }}
+                 >
+                     3</button></td>
 
                      <td><button onClick={() => {
-                     display("0");
+                     display("/");
                  }}
                  >
-                     1
-                     </button></td>
-
-                     <td><button onClick={() => {
-                     display("=");
-                 }}
-                 >
-                     1
-                     </button></td>
-
-                     <td><button onClick={() => {
-                     display("*");
-                 }}
-                 >
-                     1
-                     </button></td>
-
-                 </tr>
+                     /</button></td>
+               
             </td>
+            </tr>
+
+            
+            <tr>
+                <td>
+                 <td><button onClick={() => {
+                     display("1");
+                 }}
+                 >
+                     1
+                     </button></td>
+
+                 <td><button onClick={() => {
+                     display("2");
+                 }}
+                 >
+                     2</button></td>
+
+                 <td><button onClick={() => {
+                     display("3");
+                 }}
+                 >
+                     3</button></td>
+
+                     <td><button onClick={() => {
+                     display("/");
+                 }}
+                 >
+                     /</button></td>
+               
+            </td>
+            </tr>
+            
+
+            <tr>
+                <td>
+                 <td><button onClick={() => {
+                     display("1");
+                 }}
+                 >
+                     1
+                     </button></td>
+
+                 <td><button onClick={() => {
+                     display("2");
+                 }}
+                 >
+                     2</button></td>
+
+                 <td><button onClick={() => {
+                     display("3");
+                 }}
+                 >
+                     3</button></td>
+
+                     <td><button onClick={() => {
+                     display("/");
+                 }}
+                 >
+                     /</button></td>
+               
+            </td>
+            </tr>
 
             </table>
             
             </div>
         </div>
      </div>
+
+
+            
     );
 };
 
